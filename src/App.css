@@ -1,0 +1,16 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 10% 20%;
+
+  box-sizing: border-box;
+  background: #f9f9f9;
+}
+
+:before,
+*:after {
+  box-sizing: inherit;
+}
