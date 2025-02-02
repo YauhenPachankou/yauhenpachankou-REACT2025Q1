@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  max-height: 60%;
+  padding: 0 24px 24px;
+
+  border: 1px dashed #1a1a1a;
+
+  overflow-y: scroll;
+}
+
+.list__row {
+  font-weight: 400;
+}
+
+.list__row:first-child {
+  position: sticky;
+  top: 0;
+
+  padding: 24px 0;
+
+  font-weight: 700;
+
+  background: #f9f9f9;
+}
+
+.list__row:not(:last-child) {
+  padding-bottom: 24px;
+}
+
+.list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #535bf2;
+  border-radius: 20px;
+}
+
+.empty {
+  font-weight: 700;
+  text-align: center;
+  color: red;
+}

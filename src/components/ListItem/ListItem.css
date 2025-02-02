@@ -1,0 +1,9 @@
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: inherit;
+}
