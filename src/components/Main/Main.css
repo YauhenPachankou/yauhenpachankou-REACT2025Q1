@@ -1,8 +1,31 @@
 .main {
   display: flex;
-  flex-direction: column;
   width: 100%;
+  height: 100vh;
+}
+
+.main__left {
+  display: flex;
+  min-width: 50%;
   height: 100%;
+  flex-direction: column;
+  padding: 60px 40px;
+
+  border-right: 1px solid #ccc;
+}
+
+.main__right {
+  animation-duration: 3s;
+  animation-name: fadeInOut;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.main__left,
+.main__right {
+  flex: 1;
+  flex-shrink: 0;
+  padding: 60px 40px;
 }
 
 .main__search {
@@ -18,7 +41,7 @@
 .main__loading {
   font-weight: 700;
   text-align: center;
-  color: #535bf2;
+  color: #373333;
 }
 
 .main__error {

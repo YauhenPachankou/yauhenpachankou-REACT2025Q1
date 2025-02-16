@@ -7,17 +7,13 @@ export interface ListItemProps {
   description: string;
 }
 
-class ListItem extends React.Component<ListItemProps> {
-  render() {
-    const { name, description } = this.props;
-
-    return (
-      <div className="list-item">
-        <span>{name}</span>
-        <span>{description}</span>
-      </div>
-    );
-  }
-}
+const ListItem: React.FC<ListItemProps> = ({ name, description }) => {
+  return (
+    <div className="list-item">
+      <span>{name}</span>
+      <span>{description}</span>
+    </div>
+  );
+};
 
 export default ListItem;
